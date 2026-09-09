@@ -250,7 +250,154 @@ height:260px;
 .progress-container{
 
 width:95%;
+ }
 
+}
+/* ================================
+   CENTRALIZAÇÃO DAS SEÇÕES
+================================ */
+
+.secao {
+    text-align: center;
+}
+
+.titulo-secao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.titulo-secao span {
+    color: #2e7d32;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+
+.titulo-secao h2 {
+    color: #2e7d32 !important;
+    text-align: center;
+    margin: 0;
+}
+
+/* ================================
+   LETRA DA MÚSICA
+================================ */
+
+.caixa-letra {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.caixa-letra p {
+    margin: 0 auto 28px;
+    line-height: 1.8;
+}
+
+
+/* ================================
+   ELEMENTOS DA MÚSICA
+================================ */
+
+.descricao {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+
+/* ================================
+   COMO CRIAMOS
+================================ */
+
+.linha-tempo {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* ================================
+   O QUE VOCÊ ACHOU?
+================================ */
+
+.comentarios {
+    text-align: center;
+}
+
+.avaliacao {
+    text-align: center;
+}
+
+.formulario {
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+.comentarios-publicos {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+}
+/* TÍTULOS DAS SEÇÕES EM VERDE */
+
+#letra .titulo-secao h2,
+#elementos .titulo-secao h2,
+#criacao .titulo-secao h2,
+#comentarios .titulo-secao h2 {
+    color: #2e7d32 !important;
+}
+/* =========================
+   TÍTULOS DAS SEÇÕES
+========================= */
+
+#letra > h2,
+#elementos > .titulo-secao > h2,
+#criacao > h2,
+#comentarios > h2 {
+    color: #1DB954 !important;
+    text-align: center !important;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Centralizar todo o conteúdo das seções */
+
+.secao {
+    text-align: center;
+}
+
+/* Centralizar a letra */
+
+#letra {
+    text-align: center;
+}
+
+#letra p {
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+/* Centralizar descrição */
+
+.descricao {
+    text-align: center;
+}
+
+/* Centralizar criação */
+
+.linha-tempo {
+    text-align: center;
+}
+
+/* Centralizar comentários */
+
+.comentarios {
+    text-align: center;
 }
 
 }

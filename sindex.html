@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batuque Nacional</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Ícones -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- MENU -->
+    <aside class="sidebar">
+
+        <h1 class="logo">
+            <i class="fa-solid fa-music"></i>
+         Batuque Nacional
+        </h1>
+
+        <h3>Playlist</h3>
+
+        <ul id="playlist">
+
+            <!-- Preenchido automaticamente pelo JavaScript -->
+
+        </ul>
+
+    </aside>
+
+    <!-- PLAYER -->
+
+    <main class="player">
+
+        <img
+            id="cover"
+            src="capa1.jpg"
+            class="cover">
+
+        <h2 id="title">
+            Minha Música
+        </h2>
+
+        <p id="artist">
+            Isabela
+        </p>
+
+        <audio id="audio"></audio>
+
+        <!-- Barra -->
+
+        <div class="progress-container">
+
+            <span id="currentTime">
+                0:00
+            </span>
+
+            <input
+                type="range"
+                id="progress"
+                value="0"
+                min="0"
+                max="100">
+
+            <span id="duration">
+                0:00
+            </span>
+
+        </div>
+
+        <!-- Controles -->
+
+        <div class="controls">
+
+            <button id="prev">
+                <i class="fa-solid fa-backward"></i>
+            </button>
+
+            <button id="play">
+                <i class="fa-solid fa-play"></i>
+            </button>
+
+            <button id="next">
+                <i class="fa-solid fa-forward"></i>
+            </button>
+
+            <button id="like">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+
+        </div>
+
+        <!-- Volume -->
+
+        <div class="volume">
+
+            <i class="fa-solid fa-volume-low"></i>
+
+            <input
+                type="range"
+                id="volume"
+                min="0"
+               	max="100"
+                value="80">
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Projeto Musical</title>
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Ícones -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- CABEÇALHO -->
+
+    <header>
+
+        <nav>
+
+            <a href="#letra">
+                Letra
+            </a>
+
+            <a href="#elementos">
+                Elementos
+            </a>
+
+            <a href="#criacao">
+                Criação
+            </a>
+
+       
+
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- PLAYER PRINCIPAL -->
+
+    <section class="player-section">
+
+        <div class="player">
+
+
+    
+                 
+
+            </div>
+
+
+
+        </section>
+
+
+
+    <!-- LETRA -->
+
+    <section id="letra" class="secao">
+
+        
+
+            <h2>
+                Letra da música
+            </h2>
+<p>
+Um dia, numa rua da cidade <br>
+Eu vi um velhinho sentado na calçada<br>
+Com uma cuia de esmola<br>
+E uma viola na mão<br>
+O povo parou para ouvir<br>
+Ele agradeceu as moedas<br>
+E cantou essa música<br>
+Que contava uma história<br>
+Que era mais ou menos assim<br>
+</p>
+<p>
+Quando o samba começou na areia<br>
+Festa na aldeia de Tupinambá<br>
+Fez brilhar a luz da lua cheia<br>
+Deus Tupã clareia deixa clarear<br>
+Jurunas, Guaranis, Caingangues, Caipis<br>
+Terenas, Carajás e Suruís<br>
+Xavantes, Pataxós, Apurinãs, Kamayurás<br>
+Cambebas, Canidés e Cariris<br>
+São povos do brasil donos desse chão<br>
+Herança cultural do nosso sangue<br>
+Eu sou Tupiniquim, sou Caiapó<br>
+Sou Curumim, Tumbalalá, Kaxinawá<br>
+</p>
+<p>
+Comer tatu é bom<br>
+Que pena que dá dor nas costas<br>
+Porque o bicho é baixinho<br>
+E é por isso que eu prefiro as cabritas<br>
+As cabrita têm seios<br>
+Que alimentam<br>
+</p>
+<p>
+Eu quero te provar<br>
+Sem medo e sem amor<br>
+Uooh!<br>
+Quero te provar<br>
+Por quê?<br>
+Porque ela derrama um banquete, um palacete<br>
+Um anjo de vestido, uma libido do cacete<br>
+Ela é tão, tão vistosa, que talvez seja mentira<br>
+Quem dera minha cara fosse de sucupira<br>
+</p>
+<p>
+Agora<br>
+Que faço eu da vida sem você?<br>
+Você não me ensinou a te esquecer<br>
+Você só me ensinou a te querer<br>
+E te querendo eu vou tentando te encontrar<br>
+Vou me perdendo<br>
+Buscando em outros braços os seus abraços<br>
+</p>
+<p>
+Bailam corujas e pirilampos<br>
+Entre os Sacis e as fadas<br>
+E, lá no fundo azul (lá no fundo azul), na noite da floresta<br>
+A Lua iluminou a dança, a roda, a festa<br>
+Vira, vira, vira<br>
+Vira, vira, vira homem, vira, vira<br>
+Vira, vira lobisomem<br>
+Vira, vira, vira<br>
+Vira, vira, vira homem, vira, vira<br>
+</p>
+<p>
+A água me contou muitos segredos<br>
+Guardou os meus segredos<br>
+Refez os meus desenhos<br>
+Trouxe e levou meus medos<br>
+A Grande mãe me viu num quarto cheio d'água<br>
+Num enorme quarto lindo e cheio d'água<br>
+E eu nunca me afogava<br>
+O mar total e eu dentro do eterno ventre<br>
+E a voz de meu pai, voz de muitas águas<br>
+</p>
+<p>
+No canto do Brasil<br>
+Um lamento triste sempre ecoou<br>
+Desde que um índio guerreiro<br>
+Foi pro cativeiro e de lá cantou<br>
+Negro entoou<br>
+Um canto de revolta pelos ares<br>
+No Quilombo dos Palmares<br>
+Onde se refugiou<br>
+</p>
+<p>
+Quem me dera, ao menos uma vez<br>
+Ter de volta todo o ouro que entreguei a quem<br>
+Conseguiu me convencer que era prova de amizade<br>
+Se alguém levasse embora até o que eu não tinha<br>
+Quem me dera, ao menos uma vez<br>
+Esquecer que acreditei que era por brincadeira<br>
+Que se cortava sempre um pano de chão<br>
+De linho nobre e pura<br>
+</p>
+<p>
+Os estrangeiros, eu sei que eles vão gostar<br>
+Tem o Atlântico, tem vista pro mar<br>
+A Amazônia é o jardim do quintal<br>
+E o dólar deles paga o nosso mingau<br>
+Nós não vamo paga nada<br>
+Nós não vamo paga nada<br>
+É tudo free!<br>
+Tá na hora agora é free<br>
+Vamo embora dá lugar pros gringo entrar<br>
+Pois esse imóvel está pra alugar<br>
+</p>
+<p>
+Eu queria um apartamento no Guarujá<br>
+Mas o melhor que eu consegui foi um barraco em Itaquá<br>
+Você não sabe como parte um coração<br>
+Ver seu filhinho chorando, querendo ter um avião<br>
+Você não sabe como é frustrante<br>
+Ver sua filhinha chorando por um colar de diamante<br>
+Cê não sabe como eu fico chateado<br>
+Ver meu cachorro babando por um carro importado<br>
+Money<br>
+Que é good nóis num have (have)<br>
+Se nóis hevasse, nóis num tava aqui playando<br>
+Mas nóis precisa de worká<br>
+</p>
+<p>
+Seu carro é americano<br>
+Seu queijo é holandês<br>
+Seu azeite vem da Espanha<br>
+O seu vinho é português<br>
+Dentro do seu palacete só se fala inglês<br>
+Dentro do seu palacete só se fala inglês<br>
+Não toca nosso samba<br>
+Não gosta de pandeiro<br>
+Veste um tecido nosso<br>
+Diz que é do estrangeiro<br>
+Fala mal do que é nosso, diz que é brasileiro<br>
+Fala mal do que é nosso, diz que é brasileiro<br>
+</p>
+<p>
+    🎵🎵🎵🎵 (Milonga) <br>
+</p>
+<p>
+Índia seus cabelos nos ombros caídos<br>
+Negros como a noite que não tem luar<br>
+Seus lábios de rosa para mim sorrindo<br>
+E a doce meiguice desse seu olhar<br>
+</p>
+<p>
+A criminalidade toma conta da cidade<br>
+A sociedade põe a culpa nas autoridades<br>
+O Cacique oficial viajou pro Pantanal<br>
+Porque aqui a violência tá demais<br>
+E lá encontrou um velho índio que usava um fio dental<br>
+E fumava um cachimbo da paz<br>
+</p>
+<p>
+Fumo de rolo, arreio de cangalha<br>
+Eu tenho pra vender, quem quer comprar?<br>
+Bolo de milho, broa e cocada<br>
+Eu tenho pra vender, quem quer comprar?<br>
+Pé de moleque, alecrim, canela<br>
+Moleque, sai daqui, me deixa trabalhar<br>
+E Zé saiu correndo pra Feira Dos Pássaros<br>
+E foi passo-voando pra todo lugar<br>
+Tinha uma vendinha no canto da rua<br>
+Onde o mangaieiro ia se animar<br>
+Tomar uma bicada com lambu assado<br>
+E olhar pra Maria do Juá<br>
+</p>
+<p>
+Curió do bico doce, passarinho<br>
+Quem te trouxe pra chamar meu carimbó<br>
+Foi Verequete Verê, foi Verequete Verê<br>
+Foi Verequete, foi Lucinda e Cupijó Curió do bico doce, <br>passarinho<br>
+Quem te trouxe pra chamar meu carimbó<br>
+</p>
+<p>
+Vou-me embora, vou-me embora<br>
+Eu aqui volto mais não<br>
+Vou morar no infinito<br>
+E virar constelaçãoVou-me embora, vou-me embora<br>
+Eu aqui volto mais não<br>
+Vou morar no infinito<br>
+E virar constelação<br>
+</p>
+
+
+        </div>
+
+    </section>
+
+<br>
+<br>
+<br>
+<br>
+
+    <!-- ELEMENTOS DA PRODUÇÃO -->
+
+    <section id="elementos" class="secao">
+
+        <div class="titulo-secao">
+
+            
+            <h2>
+                Elementos da música
+            </h2>
+
+        </div>
+
+
+        <p class="descricao">
+
+            Conheça as músicas utilizadas para a produção do trabalho:
+        </p>
+
+
+
+        <div class="cartoes">
+
+
+            <div class="cartao">
+
+                
+
+                </div>
+
+                <h3>
+<br>
+                    Eu Nasci Há 10 Mil Anos Atrás — Raul Seixas
+                </h3>
+
+            </div>
+
+  <div class="cartao">
+
+                
+
+                </div>
+
+                <h3>
+<br>
+                    Povos do Brasil — Maria Bethânia                </h3>
+
+            </div>
+  <div class="cartao">
+
+                
+
+                </div>
+
+                <h3>
+<br>
+                    Mundo Animal — Mamonas Assassinas
+                </h3>
+
+            </div>
+  <div class="cartao">
+
+                
+
+                </div>
+<br>
+                <h3>
+                    Garota Nacional — Skank
+                </h3>
+
+            </div>
+  <div class="cartao">
+
+                
+
+                </div>
+<br>
+                <h3>
+                    Você Não Me Ensinou a Te Esquecer — Caetano Veloso
+                </h3>
+
+            </div>
+  <div class="cartao">
+
+                
+
+                </div>
+
+                <h3>
+<br>
+                    O Vira — Secos & Molhados (voz de Ney Matogrosso)
+                </h3>
+
+            </div>
+  <div class="cartao">
+
+                
+
+                </div>
+
+                <h3>
+<br>
+                    Eu e Água — Maria Bethânia                </h3>
+
+            </div>
+  <div class="cartao">
+
+                
+
+                </div>
+<br>
+
+                <h3>
+                   Três Raças — Clara Nunes                </h3>
+
+            </div>
+  <div class="cartao">
+
+                
+
+                </div>
+<br>
+                <h3>
+                    Índios — Legião Urbana                </h3>
+
+            </div>
+  <div class="cartao">
+
+                
+
+                </div>
+<br>
+                <h3>
+                    Aluga-se — Raul Seixas                </h3>
+
+            </div>
+  <div class="cartao">
+
+                
+
+                </div>
+<br>
+                <h3>
+                    1406 — Mamonas Assassinas                </h3>
+
+            </div>
+  <div class="cartao">
+
+                
+
+                </div>
+<br>
+                <h3>
+                    Falso Patriota — Gelson Pereira                </h3>
+
+            </div>
+  <div class="cartao">
+
+                
+
+                </div>
+<br>
+                <h3>
+                    Milonga — Renato Borghetti
+                </h3>
+
+            </div>
+  <div class="cartao">
+
+                
+
+                </div>
+
+                <h3>
+<br>
+                    Índia — Cascatinha & Inhana
+                </h3>
+
+            </div>
+  <div class="cartao">
+
+                
+
+                </div>
+
+                <h3>
+<br>
+                    Cachimbo da Paz — Gabriel o Pensador
+                </h3>
+
+            </div>
+  <div class="cartao">
+
+                
+
+                </div>
+
+                <h3>
+<br>
+                    Feira de Mangaio — Clara Nunes                </h3>
+
+            </div>
+  <div class="cartao">
+
+                
+
+                </div>
+
+                <h3>
+<br>
+                    Curió do Bico Doce — Gonzaga Blantez
+                </h3>
+
+            </div>
+  <div class="cartao">
+
+                
+
+                </div>
+
+                <h3>
+<br>
+                   Macunaíma — Clara Nunes                </h3>
+
+            </div>
+
+
+           
+
+        </div>
+
+    </section>
+
+<br>
+<br>
+<br>
+<br>
+
+    <!-- COMO FOI CRIADA -->
+
+    <section id="criacao" class="secao">
+
+        
+
+            <h2>
+                Como criamos?
+            </h2>
+
+        </div>
+
+
+
+        <div class="linha-tempo">
+
+
+            <div class="etapa">
+
+                
+                </div>
+
+                <h3>
+<br><br><br><br>
+                    Ideia
+                </h3>
+<br><br>
+
+                <p>
+A ideia surgiu justamente do amor dos integrantes do grupo pela música e do desejo de mesclar a sonoridade com a literatura.
+                </p>
+
+            </div>
+
+
+
+            <div class="etapa">
+
+     
+                   
+                </div>
+
+     
+
+                           </div>
+
+
+
+
+                </div>
+
+                <h3>
+<br><br><br><br>
+                    Produção
+                </h3>
+<br><br>
+                <p>
+                  O grupo buscou músicas brasileiras para representar o amor pela nação retratado nas duas obras. <br>
+ Além disso, decidiu-se fazer uma colagem de trechos de músicas, remetendo à escrita do livro Macunaíma e à estrutura de rapsódia. <br>
+As músicas escolhidas abordam críticas sociais ao consumismo e ao capitalismo, <br>
+além da busca pela valorização da natureza e dos diversos povos que formam o Brasil.
+                </p>
+
+            </div>
+
+
+
+            
+                </div>
+
+                <h3>
+<br><br><br><br>
+                    Resultado
+                </h3>
+<br><br>
+                <p>
+             Um arquivo de áudio com trechos de diversas canções brasileiras que entrelaçam as ideias de Krenak e a narrativa de Andrade.
+                </p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    
+    <!-- RODAPÉ -->
+
+    <footer>
+
+      Trabalho desenvolvido na disciplina de português e literatura IV
+    </footer>
+
+
+
+    <!-- ÁUDIO -->
+
+    <audio id="audio"></audio>
+
+
+
+    <!-- JAVASCRIPT -->
+
+   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="script.js"></script>
+
+
+
+</body>
+</html>
